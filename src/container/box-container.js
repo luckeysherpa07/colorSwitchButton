@@ -6,7 +6,13 @@ import * as actionCreator from "./../action/index";
 class BoxCon extends React.Component{
     render(){
         return (
-            <div style = {boxContainer}>
+            <div style = {{
+                margin: "auto",
+                marginTop: "200px",
+                width: "500px",
+                height: "300px",
+                align: "center",
+                backgroundColor: this.props.color} }>
                 {console.log(this.props.color)}
                 <Box handleClick={this.props.loadColor}></Box>
             </div>
@@ -15,11 +21,6 @@ class BoxCon extends React.Component{
 }
 
 const boxContainer = {
-    margin: "auto",
-    marginTop: "200px",
-    width: "500px",
-    height: "300px",
-    align: "center",
     backgroundColor: "blue",
 }
 
